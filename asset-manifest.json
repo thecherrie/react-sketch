@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-sketch/static/css/main.60a543f3.chunk.css",
+    "main.js": "/react-sketch/static/js/main.bb1ccefa.chunk.js",
+    "main.js.map": "/react-sketch/static/js/main.bb1ccefa.chunk.js.map",
+    "runtime-main.js": "/react-sketch/static/js/runtime-main.0a53fb08.js",
+    "runtime-main.js.map": "/react-sketch/static/js/runtime-main.0a53fb08.js.map",
+    "static/js/2.4610b90b.chunk.js": "/react-sketch/static/js/2.4610b90b.chunk.js",
+    "static/js/2.4610b90b.chunk.js.map": "/react-sketch/static/js/2.4610b90b.chunk.js.map",
+    "index.html": "/react-sketch/index.html",
+    "precache-manifest.1833a8bee870124cdaec55a5a7c214a4.js": "/react-sketch/precache-manifest.1833a8bee870124cdaec55a5a7c214a4.js",
+    "service-worker.js": "/react-sketch/service-worker.js",
+    "static/css/main.60a543f3.chunk.css.map": "/react-sketch/static/css/main.60a543f3.chunk.css.map",
+    "static/js/2.4610b90b.chunk.js.LICENSE.txt": "/react-sketch/static/js/2.4610b90b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a53fb08.js",
+    "static/js/2.4610b90b.chunk.js",
+    "static/css/main.60a543f3.chunk.css",
+    "static/js/main.bb1ccefa.chunk.js"
+  ]
+}
