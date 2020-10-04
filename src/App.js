@@ -1,26 +1,82 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CanvasDraw from 'react-canvas-draw';
+import ToolBar from './components/toolbar/toolbar';
+import ColourPalette from './components/colourpalette/colourpalette';
+import SizeSlider from './components/sizeslider/sizeslider';
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(){
+    super();
+
+    this.state = {
+      brushColour: "#000",
+      displayColourPalette: false,
+      displaySizeSlider: false,
+    }
+  }
+
+  displayColourPalette = () => {
+    this.setState({
+      displayColourPalette: !this.state.displayColourPalette,
+      displaySizeSlider: false
+    })
+  }
+
+  displaySizeSlider = () => {
+    this.setState({
+      displayColourPalette: false,
+      displaySizeSlider: !this.state.displaySizeSlider
+    })
+  }
+
+  changeColour = (colour) => {
+    this.setState({brushColour: colour}, () => {
+      console.log(this.state.brushColour);
+    })
+  }
+
+  clearCanvas = () => {
+    this.saveableCanvas.clear()
+    this.setState({displayColourPalette: false})
+  }
+
+  render(){
+    return (
+      <div className="App">
+          <ToolBar
+          onClearButtonClick={this.clearCanvas}
+          onColourPaletteClick={this.displayColourPalette}
+          onResizeClick={this.displaySizeSlider}
+        />
+
+
+        <ColourPalette
+          isVisible={this.state.displayColourPalette}
+          onColourChoose={(colour) => this.changeColour(colour)}
+          />
+        <SizeSlider
+          isVisible={this.state.displaySizeSlider}
+
+        />
+
+
+        <CanvasDraw
+          ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
+          canvasWidth="400"
+          brushColor={this.state.brushColour}
+          brushRadius="1"
+          hideGrid="true"
+        />
+
+        <footer>
+                <p> Created by Cherrie </p>
+        </footer>
+
+      </div>
+    );
+  }
 }
 
 export default App;

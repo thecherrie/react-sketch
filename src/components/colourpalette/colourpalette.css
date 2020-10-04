@@ -1,0 +1,43 @@
+.colour-palette {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  background: whitesmoke;
+  border-radius: 15px;
+  z-index:20;
+  margin: 0px 10px 10px 10px;
+
+  -webkit-box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+  -moz-box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+  box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+
+}
+
+.yellow {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  margin: 20px 5px 20px 20px;
+}
+
+.black {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  margin: 20px 5px 20px 20px;
+}
+
+.blue {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+  margin: 20px 20px 20px 20px;
+}
+
+.blue:active {
+  border-width: medium;
+  border-color: white;
+}

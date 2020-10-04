@@ -1,0 +1,15 @@
+.size-slider {
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 60px;
+  background: whitesmoke;
+  border-radius: 15px;
+  z-index:20;
+  margin: 0px 10px 10px 10px;
+
+  -webkit-box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+  -moz-box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+  box-shadow: 6px 6px 6px 1px rgba(0,0,0,0.08);
+
+}

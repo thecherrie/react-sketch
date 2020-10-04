@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  background: whitesmoke;
+  height: 100;
+  width: 100%;
+  z-index: 30;
+
+}
+
+.toolbar-button {
+  margin: 10px;
+  border: none;
+  background: transparent;
+}
